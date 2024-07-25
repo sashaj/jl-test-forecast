@@ -1,7 +1,7 @@
 ## About
 
 -   This a done test task
--   Deploy:  
+-   Deploy: https://jl-test-forecast.netlify.app/
 
 ## Tech
 
