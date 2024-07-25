@@ -24,7 +24,7 @@ const selectLocation = (location: Location) => {
 
 <template>
     <div class="flex">
-        <input class="search-query" type="text" v-model="searchQuery" placeholder="Just give me location" @input="searchLocation" />
+        <input class="search-query" type="text" v-model="searchQuery" placeholder="Location..." @input="searchLocation" />
         <ul class="location-wrapper" v-if="locations.length">
             <li class="location-item" v-for="location in locations" :key="location.id" @click="selectLocation(location)">
                 {{ location.name }}
@@ -46,7 +46,8 @@ const selectLocation = (location: Location) => {
 }
 
 .location-item:hover {
-    background-color: gray;
+    background-color: #007bff;
+    color: white;
 }
 .location-wrapper {
     width: 500px;
